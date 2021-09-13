@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+.container {
+  background-color: hsl(235, 21%, 11%);
+ min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.image {
+  width: 100%;
+  height: 40vh;
+}
+
+.todoApp {
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 35%;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+
+
+
+
+
+
+.header {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+.header-text{
+  display:inline;
+}
+.sun {
+  margin-left: 17vw;
+  cursor: pointer;
+}
+.moon {
+  margin-left: 17vw;
+  cursor: pointer;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  border: 1px solid hsl(233, 7%, 24%);
+  margin-bottom: 2rem;
+  background-color: hsl(235, 24%, 19%);
+}
+
+#input-text {
+  color: rgb(209, 168, 168);
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+  outline: none;
+}
+#radiomain {
+  size: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+#radio {
+  size: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.content {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  color: rgb(209, 168, 168);
+  background-color: hsl(235, 24%, 19%);
+  margin-bottom: 0.5rem;
+  box-sizing: content-box;
+  border: 1px solid hsla(240, 2%, 34%, 0.726);
+  align-content: center;
+  text-align: start;
+  padding-top: 1.5rem;
+}
+.footer {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  color: white;
+  padding: auto;
+  height: 3rem;
+  margin-top: 2rem;
+}
+#completed,
+#active,
+#clearcompleted,
+#all {
+  cursor: pointer;
+  opacity: 0.6;
+}
+#itemsleft:hover {
+  opacity: 1;
+}
+
+#completed:hover {
+  opacity: 1;
+}
+
+#active:hover {
+  opacity: 1;
+}
+#clearcompleted:hover {
+  opacity: 1;
+}
+#all:hover {
+  opacity: 1;
+}
+.hide {
+  display: none;
+}
+
+
+@media only screen and (max-width: 880px) {
+  .todoApp {
+    margin-left: 20vw;
+  }
+}
+
+@media only screen and (max-width:465px){
+
+  .header{
+    font-size: 2rem;
+    letter-spacing:0.1rem;
+
+  }
+  .todoApp{
+    margin-left:5%;
+
+  }
+
+  .footer{
+    font-size: 1rem;
+  }
+  .input-text{
+    font-size:1rem;
+  }
+  .sun,.moon{
+    margin-left:30vw;
+  }
+}
